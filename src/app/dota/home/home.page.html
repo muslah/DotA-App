@@ -1,0 +1,491 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="icon">
+      <img src="/assets/icon/favicon.png" alt="iconNotFound">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="Maincon">
+    <ion-card class="welcome-card">
+      <img src="/assets/background.png" alt="" />
+      <ion-card-header>
+        <ion-card-title>DotA 2</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>The DotA 2 app you only need</p>
+      </ion-card-content>
+    </ion-card>
+
+    
+    <ion-segment [(ngModel)]="selectedView">
+      <ion-segment-button value="ESports">
+        <ion-label>ESports</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Updates">
+        <ion-label>Latest Update</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <div [ngSwitch]="selectedView">
+
+      <div *ngSwitchCase="'Updates'">
+        <ion-grid>
+          <div class="title">General</div>
+        <ion-row>
+          <ion-col>
+            <div class="UpdateContentTop">XP bonus for kill streaks reduced from 30->100 * Level to 20->90 * Level.</div>
+          </ion-col>
+        </ion-row>  
+        </ion-grid>
+        <ion-grid>
+          <div class="title">Items</div>
+        <ion-row>
+          <ion-col>
+            <img src="/assets/basicItems/BootsofSpeed.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Changed from +15% to +45</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/PowerTreads.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Changed from +15% to +45</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/PhaseBoots.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Changed from +15% to +45</div>
+            <div class="UpdateContent">Phase active speed reduced from 22% to 20%</div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/TranquilBoots(Active).png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Changed from +26% to +75</div>
+            <div class="UpdateContent">Inactive state changed from +18% to +50</div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/GuardianGreaves.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Changed from +17% to +50</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/BootsOfTravel1.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Changed from 38/44% to +110/130</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/neutralItems/Spider_Legs_icon.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Changed from +28% to +65</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/neutralItems/Force_Boots_icon.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Changed from +40% to +115</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/neutralItems/Woodland_Striders_icon.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Changed from +50% to +140</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/Yasha.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Changed from +20 to +8%</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/MantaStyle.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Changed from +20 to +8%</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/SangeAndYasha.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Changed from +30 to +10%</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/YashaAndKaya.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Changed from +30 to +10%</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/neutralItems/Trident_icon.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Changed from +30 to +10%</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/DrumOfEndurance.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Speed bonus reduced from 13% to 12%</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/SpiritVessel.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Provides a negative aura that reduces health regen, heals and lifesteal by 20% in a 1200 aoe</div>
+            <div class="UpdateContent">Soul Release debuff regen reduction reduced from from 60% to 35%</div>
+            <div class="UpdateContent">No longer requires Wind Lace (nor provides movement bonus)</div>
+            <div class="UpdateContent">Recipe cost increased from 750 to 1000</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/RingOfBasilius(Active).png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Recipe cost increased from 150 to 175</div>
+          </ion-col>
+        </ion-row> 
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/Headdress.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Recipe cost increased from 150 to 200</div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/SoulRing.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Recipe cost increased from 250 to 300</div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <img src="/assets/UpgradedItems/Vladmir'sOffering.png" alt="PicNotFound" class="UpdateImg">
+          </ion-col>
+          <ion-col>
+            <div class="UpdateContent">Lifesteal reduced from 25% to 20%</div>
+            <div class="UpdateContent">Recipe cost increased from 550 to 600</div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+        <ion-col>
+          <img src="/assets/UpgradedItems/Mekansm.png" alt="PicNotFound" class="UpdateImg">
+        </ion-col>
+        <ion-col>
+          <div class="UpdateContent">Recipe cost increased from 950 to 1000</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/UpgradedItems/PipeOfInsight.png" alt="PicNotFound" class="UpdateImg">
+        </ion-col>
+        <ion-col>
+          <div class="UpdateContent">Recipe cost increased from 1000 to 1200</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/UpgradedItems/LotusOrb.png" alt="PicNotFound" class="UpdateImg">
+        </ion-col>
+        <ion-col>
+          <div class="UpdateContent">Manacost increased from 150 to 175</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/UpgradedItems/SilverEdge.png" alt="PicNotFound" class="UpdateImg">
+        </ion-col>
+        <ion-col>
+          <div class="UpdateContent">No longer reduces regen</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/UpgradedItems/EyeOfSkadi.png" alt="PicNotFound" class="UpdateImg">
+        </ion-col>
+        <ion-col>
+          <div class="UpdateContent">Reduces all regen, heals and lifesteal by 35%</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/UpgradedItems/Nullifier.png" alt="PicNotFound" class="UpdateImg">
+        </ion-col>
+        <ion-col>
+          <div class="UpdateContent">Debuff is no longer dispellable</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/UpgradedItems/BladeMail.png" alt="PicNotFound" class="UpdateImg">
+        </ion-col>
+        <ion-col>
+          <div class="UpdateContent">Intelligence reduced from 10 to 8</div>
+        </ion-col>
+      </ion-row>
+        </ion-grid>
+
+        <ion-grid>
+          <div class="title">Heroes</div>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/Heroes/Alchemist_icon.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+              <div class="UpdateHeroName">Alchemist</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/heroesAbilities/Alchemist_Greevil's_Greed.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+          <div class="UpdateContent">Greevil's Greed cap reduced from 20/24/28/32 to 18/22/26/30</div>
+          <div class="UpdateContent">Greevil's Greed Base gold bonus reduced from 4 to 3</div>
+          <div class="UpdateContent">Greevil's Greed Bounty Rune multiplier reduced from 2/2.5/3/3.5 to 1.5/2/2.5/3</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/Heroes/Batrider_icon.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+              <div class="UpdateHeroName">Batrider</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/heroesAbilities/batrider_firefly.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+          <div class="UpdateContent">Firefly speed bonus reduced from 4/8/12/16% to 4/7/10/13%</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/Heroes/Bloodseeker_icon.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+              <div class="UpdateHeroName">Bloodseeker</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/heroesAbilities/bloodseeker_thirst.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+          <div class="UpdateContent">Thirst movement speed reduced from 12/24/36/48% to 14/24/34/44%</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/Heroes/Bounty_Hunter_icon.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+              <div class="UpdateHeroName">Bounty Hunter</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/heroesAbilities/bounty_hunter_track.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+          <div class="UpdateContent">Track self gold reduced from 150/250/350 to 130/225/320</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/Heroes/Brewmaster_icon.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+              <div class="UpdateHeroName">Brewmaster</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/heroesAbilities/brewmaster_primal_split.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+          <div class="UpdateContent">Primal Split Permanent Immolation damage increased from 20/40/60 to 25/50/75</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/Heroes/Broodmother_icon.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+              <div class="UpdateHeroName">Broodmother</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/heroesAbilities/broodmother_spin_web.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+          <div class="UpdateContent">Spin Web movement speed reduced from 25/40/55/70% to 20/35/50/65%</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/Heroes/Chaos_Knight_icon.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+              <div class="UpdateHeroName">Chaos Knight</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/heroesAbilities/chaos_knight_phantasm.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+          <div class="UpdateContent">Phantasm cooldown reduced from 145/135/125 to 125</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/Heroes/Chen_icon.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+              <div class="UpdateHeroName">Chen</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/heroesAbilities/chen_divine_favor.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+          <div class="UpdateContent">Divine Favor health regen reduced from 2/3/4/5 to 1.25/2.5/3.75/5</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/Heroes/Clinkz_icon.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+              <div class="UpdateHeroName">Clinkz</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/heroesAbilities/clinkz_searing_arrows.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+          <div class="UpdateContent">Searing Arrows damage increased from 20/30/40/50 to 30/40/50/60</div>
+          <div class="UpdateContent">Searing Arrows manacost from 6/8/10/12 to 9/10/11/12</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/Heroes/Death_Prophet_icon.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+              <div class="UpdateHeroName">Death Prophet</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <img src="/assets/heroesAbilities/death_prophet_exorcism.png" alt="PicNotFound" class="UpdateImg">
+            </ion-col>
+            <ion-col>
+          <div class="UpdateContent">Base movement speed reduced from 315 to 310</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </div>
+
+  <div *ngSwitchCase="'ESports'">
+    <div class="title">Upcoming Tournaments</div>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/TournamentsIcons/TheInternationalSmall.png" class="linkIcon">
+       </ion-col>
+       <ion-col>
+          <a class="link" href="https://liquipedia.net/dota2/The_International/2020">The International 2020         Aug 18 - 23</a>
+       </ion-col>
+      </ion-row>
+   </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/TournamentsIcons/ONE_Esports_SG_Major.png" class="linkIcon">
+       </ion-col>
+       <ion-col>
+          <a class="link" href="https://liquipedia.net/dota2/ONE_Esports/Singapore_Major/2020">ONE Esports Singapore Major         Jun 20 - 28</a>
+       </ion-col>
+      </ion-row>
+   </ion-grid>
+    <div class="title">Ongoing Tournaments</div>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/TournamentsIcons/WePlay!_Pushka_League.png" class="linkIcon">
+       </ion-col>
+       <ion-col>
+          <a class="link" href="https://liquipedia.net/dota2/WePlay/Pushka_League/1/Division_1">WePlay!_Pushka_League         Apr 24 - May 12</a>
+       </ion-col>
+      </ion-row>
+   </ion-grid>
+    <div class="title">Completed Tournaments</div>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/TournamentsIcons/T.png" class="linkIcon">
+       </ion-col>
+       <ion-col>
+          <a class="link" href="https://liquipedia.net/dota2/BTS/Pro_Series/Americas">BTS Pro Series         Apr 10 - 26</a>
+       </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/TournamentsIcons/ESL_One_2019.png" class="linkIcon">
+       </ion-col>
+       <ion-col>
+          <a class="link" href="https://liquipedia.net/dota2/ESL_One/Los_Angeles/2020/Online/Europe_CIS">ESL One 2020         Apr 04 - 19</a>
+       </ion-col>
+      </ion-row>
+   </ion-grid>
+  </div>
+
+  </div>
+</ion-content>

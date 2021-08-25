@@ -229,4 +229,11 @@
   ion-title.title-large {
     --color: white;
   }
+    
+  ion-tab-button.tab-selected {
+    ion-icon, ion-label {
+      color: var(--ion-color-danger) !important;
+      --ion-color-base: var(--ion-color-danger) !important;
+    }
+  }
 }
